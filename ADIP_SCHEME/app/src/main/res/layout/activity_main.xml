@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/roundedcard" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d49c3b"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <EditText
+                        android:id="@+id/udid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_margin="10dp"
+                        android:hint="UDID No."
+                        android:textColor="#634510"
+                        />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+
+                        android:textColor="#634510" />
+
+
+                    <EditText
+                        android:id="@+id/PassOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_margin="10dp"
+                        android:textColor="#634510"
+                        android:hint="Password"
+                        />
+                    <EditText
+                        android:id="@+id/PassTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_margin="10dp"
+                        android:textColor="#634510"
+                        android:hint="Confirm Password"/>
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:backgroundTint="#634510"/>
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:backgroundTint="#634510"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ministry"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
